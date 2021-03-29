@@ -18,13 +18,15 @@ A .gitignore template for android and flutter development
 *.iml
 *.ipr
 *.iws
-.idea/
+*.idea/
+*.gradle
 
 # Visual Studio Code related
 .vscode/
 
 # Flutter/Dart/Pub related
 **/doc/api/
+**/ios/Flutter/.last_build_id
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
@@ -32,6 +34,9 @@ A .gitignore template for android and flutter development
 .pub-cache/
 .pub/
 /build/
+
+# Web related
+lib/generated_plugin_registrant.dart
 
 # Android related
 **/android/**/gradle-wrapper.jar
@@ -41,6 +46,9 @@ A .gitignore template for android and flutter development
 **/android/gradlew.bat
 **/android/local.properties
 **/android/**/GeneratedPluginRegistrant.*
+app.*.symbols
+app.*.map.json
+**local.properties
 
 # iOS/XCode related
 **/ios/**/*.mode1v3
@@ -70,7 +78,7 @@ A .gitignore template for android and flutter development
 **/ios/Runner/GeneratedPluginRegistrant.*
 
 # Google service configuration
-/android/app/google-services.json
+**/app/google-services.json
 ```
 
 ## About
